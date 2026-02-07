@@ -1,0 +1,321 @@
+body{
+    margin: 15px;
+}
+
+/* Header */
+.round-image-and-h6{
+    display: flex;
+    flex-direction: row;
+    color: black;
+    font-size: 25px;
+}
+
+.round-image-div{
+    display: flex;
+    justify-content: center;
+}
+
+.round-image-div img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid black;
+    object-fit: cover;
+}
+
+h6{
+    margin-top: 25px;
+    padding-left: 5px;
+}
+
+.My{
+    color: #05bef7;
+}
+
+/* Navbar */
+.navbar{
+    position: absolute;
+    right: 0;
+    top: -10px;
+    margin-top: -60px;
+    margin-right: 15px;
+}
+
+.navbar a{
+    padding-left: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    opacity: 0.6;
+    color: black;
+    font-weight: 900;
+}
+
+.navbar a:hover{
+    opacity: 1;
+}
+
+/* Home content */
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 70px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.what-i-do{
+    display: block;
+    margin-top: 70px;
+}
+
+.what-i-do h2{
+    font-size: 40px;
+}
+
+.what-i-do h3{
+    font-size: 30px;
+}
+
+.what-i-do p{
+    word-spacing: 5px;
+}
+
+.p-span{
+    color: #05bef7;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+}
+
+.profile-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Footer */
+.footer{
+    margin-top: 20px;
+    background-color: rgba(22, 20, 20, 0.89);
+    display: block;
+}
+
+.footer p{
+    text-align: center;
+    font-size: 16px;
+    color: aliceblue;
+}
+
+
+/* ============================= */
+/* PROJECTS PAGE (NEW + CLEAN)   */
+/* ============================= */
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(240px, 1fr));
+    gap: 22px;
+    padding: 10px;
+}
+
+@media (max-width: 980px){
+    .projects-grid{
+        grid-template-columns: repeat(2, minmax(240px, 1fr));
+    }
+}
+
+@media (max-width: 650px){
+    .projects-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+.project-card{
+    border: 2px solid #05bef7;
+    border-radius: 22px;
+    padding: 14px;
+    box-sizing: border-box;
+}
+
+.project-profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.project-profile img{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 3px solid #05bef7;
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+
+.project-profile h4{
+    margin: 0;
+    font-size: 18px;
+}
+
+.project-tag{
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 13px;
+    font-weight: 900;
+    opacity: 0.8;
+}
+
+.project-image{
+    width: 100%;
+    height: 210px;           /* SAME height for all project images */
+    overflow: hidden;
+    border-radius: 14px;
+    margin-bottom: 12px;
+}
+
+.project-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;       /* SAME crop for all project images */
+    display: block;
+}
+
+.project-title{
+    text-align: center;
+    margin: 10px 0 6px 0;
+    font-size: 18px;
+}
+
+.project-desc{
+    text-align: center;
+    margin: 0 0 14px 0;
+    opacity: 0.85;
+    line-height: 1.4;
+}
+
+.project-actions{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-btn{
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-weight: 900;
+    background-color: #05bef7;
+    color: black;
+    display: inline-block;
+}
+
+.project-btn:hover{
+    opacity: 0.85;
+}
+
+.project-btn.outline{
+    background: transparent;
+    border: 2px solid #05bef7;
+    color: black;
+}
+
+
+/* ============================= */
+/* HOBBIES (your working styles) */
+/* ============================= */
+
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.hobbies-row1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.hobbies1 {
+    width: 320px;
+    border: 2px solid #05bef7;
+    border-radius: 20px;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.hobbies1-img {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.hobbies1-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hobbies1 h4 {
+    text-align: center;
+    margin: 12px 0 6px 0;
+}
+
+.hobbies1 p {
+    text-align: center;
+    margin: 0;
+    opacity: 0.8;
+}
+
+
+/* Contact me */
+.contact-header{
+    text-align: center;
+    padding: 40px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #0497aa;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 1000;
+}
+
+input[type=submit]:hover {
+  background-color: #4592a0;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="Myimages.jpeg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<div class="header">
+    <div class="round-image-and-h6">
+        <div class="round-image-div">
+            <img class="round-image" src="Myimages.jpeg" alt="My image">
+        </div>
+        <h6> <span class="My">My</span> Portfolio</h6>
+    </div>
+</div>
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="projects.html">My Projects</a>
+    <a href="hobbies.html">My Hobbies</a>
+    <a href="contact.html">Contact Me</a>
+</div>
+
+
+<h3 class="contact-header">Contact Form</h3>
+
+<main class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</main>
+
+<footer class="footer">
+    <p>Email: myportfolio@gmail.com</p>
+    <p>© My Portfolio website</p>
+</footer>
+
+</body>
+</html>
